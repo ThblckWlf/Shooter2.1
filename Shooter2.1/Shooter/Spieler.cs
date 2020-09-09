@@ -115,9 +115,6 @@ namespace Shooter
                 richtung = 1;
                 if (geschossen && munition != 0)
                 {
-
-
-
                     kglist.Add(new Kugel(x + 5, y + 5));
                     int i = kglist.Count();
                     geschossen = false;
@@ -125,14 +122,12 @@ namespace Shooter
                     munition--;
                 }
             }
+
             if (e.KeyCode == Keys.Down)
             {
                 richtung = 2;
                 if (geschossen && munition != 0)
                 {
-
-
-
                     kglist.Add(new Kugel(x + 5, y + 5));
                     int i = kglist.Count();
                     geschossen = false;
@@ -145,9 +140,6 @@ namespace Shooter
                 richtung = 3;
                 if (geschossen && munition != 0)
                 {
-
-
-
                     kglist.Add(new Kugel(x + 5, y + 5));
                     int i = kglist.Count();
                     geschossen = false;
@@ -163,9 +155,6 @@ namespace Shooter
                 richtung = 4;
                 if (geschossen && munition != 0)
                 {
-
-
-
                     kglist.Add(new Kugel(x + 5, y + 5));
                     int i = kglist.Count();
                     geschossen = false;
@@ -183,19 +172,25 @@ namespace Shooter
             {
                 if (Math.Sqrt(Math.Pow((zb1.x + 6) - (this.x + 5), 2) + Math.Pow((zb1.y + 6) - (this.y + 5), 2)) < 11)
                 {
-                    stop(timer);
+                    if (leben <= 0)
+                    {   
+                        stop(timer);
+                        return;
+                    }
 
-                    return;
                 }
             }
-
+            <<gse
             foreach (Boss b1 in bosslist)
             {
                 if (Math.Sqrt(Math.Pow((b1.x + 10) - (this.x + 5), 2) + Math.Pow((b1.y + 10) - (this.y + 5), 2)) < 15)
                 {
-                    stop(timer);
-
-                    return;
+                    leben--;
+                    if (leben <= 0)
+                    {
+                        stop(timer);
+                        return;
+                    }
                 }
             }
 
@@ -224,6 +219,7 @@ namespace Shooter
                     }
 
                 }
+
                 foreach (Boss bo1 in bosslist)
                 {
                     if (Math.Sqrt(Math.Pow((bo1.x + 10) - (kg1.x + 3), 2) + Math.Pow((bo1.y + 10) - (kg1.y + 3), 2)) < 13)
