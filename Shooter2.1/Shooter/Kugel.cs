@@ -39,12 +39,24 @@ namespace Shooter
 
 
         }
-    
-    public void zeichnen(Graphics l, SolidBrush b)
+
+        public void zeichnen(Graphics l, SolidBrush b)
         {
-            l.FillEllipse(b, x,y, 6, 6);
+            l.FillEllipse(b, x, y, 6, 6);
         }
-    
+
+
+        public void loeschen(Spieler sp1)
+        {
+
+            if (this.x > 710 || this.x < 0 || this.y > 710 || this.y < 0)
+            {
+                sp1.kglist.Remove(this);
+                return;
+            }
+        }
     }
+
+
 
 }

@@ -34,6 +34,7 @@
             this.kills = new System.Windows.Forms.Label();
             this.muni = new System.Windows.Forms.Label();
             this.granaten = new System.Windows.Forms.Label();
+            this.lebenl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
@@ -76,17 +77,29 @@
             this.granaten.TabIndex = 2;
             this.granaten.Text = "Granaten:";
             // 
+            // lebenl
+            // 
+            this.lebenl.AutoSize = true;
+            this.lebenl.Location = new System.Drawing.Point(13, 13);
+            this.lebenl.Name = "lebenl";
+            this.lebenl.Size = new System.Drawing.Size(58, 20);
+            this.lebenl.TabIndex = 3;
+            this.lebenl.Text = "Leben:";
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(678, 644);
+            this.ClientSize = new System.Drawing.Size(684, 661);
+            this.Controls.Add(this.lebenl);
             this.Controls.Add(this.granaten);
             this.Controls.Add(this.muni);
             this.Controls.Add(this.kills);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Zombiehoorde";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -104,6 +117,7 @@
         public System.Windows.Forms.Label kills;
         private System.Windows.Forms.Label muni;
         private System.Windows.Forms.Label granaten;
+        public System.Windows.Forms.Label lebenl;
     }
 }
 

@@ -62,7 +62,16 @@ namespace Shooter
 
         }
 
+        public void loeschen(Spieler sp1)
+        {
 
+            if (this.x > 710 || this.x < -10 || this.y > 710 || this.y < -10)
+            {
+                sp1.zomlist.Remove(this);
+                return;
+            }
+
+        }
 
     }
 

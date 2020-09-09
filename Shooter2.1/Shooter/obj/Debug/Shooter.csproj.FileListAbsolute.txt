@@ -58,3 +58,13 @@ C:\Users\mondsv1\source\repos\Shooter2.1\Shooter\obj\Debug\Shooter.csproj.Genera
 C:\Users\mondsv1\source\repos\Shooter2.1\Shooter\obj\Debug\Shooter.csproj.CoreCompileInputs.cache
 C:\Users\mondsv1\source\repos\Shooter2.1\Shooter\obj\Debug\Shooter.exe
 C:\Users\mondsv1\source\repos\Shooter2.1\Shooter\obj\Debug\Shooter.pdb
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\bin\Debug\Shooter.exe.config
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\bin\Debug\Shooter.exe
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\bin\Debug\Shooter.pdb
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.csprojAssemblyReference.cache
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.Form1.resources
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.Properties.Resources.resources
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.csproj.GenerateResource.cache
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.csproj.CoreCompileInputs.cache
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.exe
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.pdb

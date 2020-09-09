@@ -15,12 +15,12 @@ namespace Shooter
         public bool geschossen = true;
         public int munition = 20;
         public int granaten = 3;
+        public int leben = 1;
         public int xgra;
         public int ygra;
-        
-
-
         public int score = 0;
+
+
         public List<Kugel> kglist = new List<Kugel>();
         public List<Zombies> zomlist = new List<Zombies>();
         public List<Granate> granlist = new List<Granate>();
@@ -105,7 +105,7 @@ namespace Shooter
         public void stop(System.Windows.Forms.Timer timer)
         {
             timer.Stop();
-            MessageBox.Show("Tod. Du hast " +score+" Kills gemacht");
+            MessageBox.Show("Tod. Du hast " + score + " Kills gemacht");
             Application.Exit();
         }
         public void schuss(KeyEventArgs e)
@@ -176,21 +176,22 @@ namespace Shooter
 
         }
 
+
         public void getroffen(System.Windows.Forms.Timer timer)
         {
             foreach (Zombies zb1 in zomlist)
             {
-                if (Math.Sqrt(Math.Pow((zb1.x+6) - (this.x+5) , 2) + Math.Pow((zb1.y+6) - (this.y+5) , 2)) < 11)
+                if (Math.Sqrt(Math.Pow((zb1.x + 6) - (this.x + 5), 2) + Math.Pow((zb1.y + 6) - (this.y + 5), 2)) < 11)
                 {
                     stop(timer);
-                   
+
                     return;
                 }
             }
 
             foreach (Boss b1 in bosslist)
             {
-                if (Math.Sqrt(Math.Pow((b1.x+10) - (this.x + 5), 2) + Math.Pow((b1.y+10) - (this.y + 5), 2)) < 15)
+                if (Math.Sqrt(Math.Pow((b1.x + 10) - (this.x + 5), 2) + Math.Pow((b1.y + 10) - (this.y + 5), 2)) < 15)
                 {
                     stop(timer);
 
@@ -220,8 +221,6 @@ namespace Shooter
                             zb1.tot--;
                             return;
                         }
-
-
                     }
 
                 }
@@ -230,9 +229,9 @@ namespace Shooter
                     if (Math.Sqrt(Math.Pow((bo1.x + 10) - (kg1.x + 3), 2) + Math.Pow((bo1.y + 10) - (kg1.y + 3), 2)) < 13)
                     {
                         kglist.Remove(kg1);
-                        
 
-                        if (bo1.tot <= 0)
+
+                        if (bo1.tot == 0)
                         {
                             bosslist.Remove(bo1);
                             score += 10;
