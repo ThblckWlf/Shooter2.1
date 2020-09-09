@@ -39,23 +39,23 @@ namespace Shooter
         {
             if (e.KeyCode == Keys.W)
             {
-                yspeed = -3;
+                yspeed = -4;
                 richtung = 1;
             }
             if (e.KeyCode == Keys.S)
             {
-                yspeed = 3;
+                yspeed = 4;
                 richtung = 2;
             }
             if (e.KeyCode == Keys.A)
             {
-                xspeed = -3;
+                xspeed = -4;
                 richtung = 3;
             }
 
             if (e.KeyCode == Keys.D)
             {
-                xspeed = 3;
+                xspeed = 4;
                 richtung = 4;
             }
 
@@ -242,7 +242,7 @@ namespace Shooter
                         {
                             bo1.tot--;
                             return;
-                        }hgfda
+                        }
                     }
                 }
 

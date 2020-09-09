@@ -38,7 +38,7 @@ namespace Shooter
             sp1.zeichenen(l);
 
 
-            if (sp1.score == 4 && boss1gespawnt == true)
+            if (sp1.score == 1 && boss1gespawnt == true)
             {
                 boss1gespawnt = false;
                 sp1.bosslist.Add(new Boss(20));
@@ -75,6 +75,7 @@ namespace Shooter
 
                 bo1.Verfolgen(sp1.x, sp1.y);
                 bo1.Zeichnen(l, b1);
+                bo1.bossschuss(sp1,l,zeichner);
             }
 
 
