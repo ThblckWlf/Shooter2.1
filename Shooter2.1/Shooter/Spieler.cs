@@ -78,6 +78,7 @@ namespace Shooter
                     munition--;
                 }
             }
+
             if (e.KeyCode == Keys.E)
             {
                 if (granaten != 0)
@@ -102,12 +103,14 @@ namespace Shooter
             l.FillEllipse(b, x, y, 10, 10);
 
         }
+
         public void stop(System.Windows.Forms.Timer timer)
         {
             timer.Stop();
             MessageBox.Show("Tod. Du hast " + score + " Kills gemacht");
             Application.Exit();
         }
+
         public void schuss(KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up)
@@ -165,14 +168,14 @@ namespace Shooter
 
         }
 
-
         public void getroffen(System.Windows.Forms.Timer timer)
         {
             foreach (Zombies zb1 in zomlist)
             {
                 if (Math.Sqrt(Math.Pow((zb1.x + 6) - (this.x + 5), 2) + Math.Pow((zb1.y + 6) - (this.y + 5), 2)) < 11)
                 {
-                    if (leben <= 0)
+                    leben--;
+                    if (this.leben <= 0)
                     {   
                         stop(timer);
                         return;
@@ -180,13 +183,13 @@ namespace Shooter
 
                 }
             }
-            <<gse
+       
             foreach (Boss b1 in bosslist)
             {
                 if (Math.Sqrt(Math.Pow((b1.x + 10) - (this.x + 5), 2) + Math.Pow((b1.y + 10) - (this.y + 5), 2)) < 15)
                 {
                     leben--;
-                    if (leben <= 0)
+                    if (this.leben <= 0)
                     {
                         stop(timer);
                         return;

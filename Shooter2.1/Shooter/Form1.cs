@@ -227,6 +227,7 @@ namespace Shooter
             granaten.Update();
 
             lebenl.Text = "Leben: " + sp1.leben;
+            lebenl.Update();
 
 
         }
