@@ -242,7 +242,7 @@ namespace Shooter
                         {
                             bo1.tot--;
                             return;
-                        }
+                        }hgfda
                     }
                 }
 
