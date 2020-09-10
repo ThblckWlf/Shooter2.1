@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Shooter
 {
-    class Spieler
+     class Spieler
     {
         public int x;
         public int y;
@@ -106,6 +106,7 @@ namespace Shooter
 
         public void stop(System.Windows.Forms.Timer timer)
         {
+
             timer.Stop();
             MessageBox.Show("Tod. Du hast " + score + " Kills gemacht");
             Application.Exit();

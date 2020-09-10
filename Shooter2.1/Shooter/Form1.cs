@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Shooter
@@ -11,11 +12,16 @@ namespace Shooter
 
         Random r = new Random();
 
+        Form2 Form2 = new Form2();
 
         public bool boss1gespawnt = true;
+        public bool welle = true;
         public Form1()
         {
             InitializeComponent();
+            
+            
+            
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -148,12 +154,22 @@ namespace Shooter
 
             sp1.getroffen(zeichner);
 
+            if (boss1gespawnt == false && sp1.bosslist.Count == 0 && welle == true) 
+            {
+                welle = false;
+                Thread.Sleep(50);
+                MessageBox.Show("Du hast Welle 1 geschafft");
+                Hide();
+                
+                Form2.ShowDialog();
+                this.Show();
+            }
         }
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
 
@@ -226,6 +242,7 @@ namespace Shooter
 
             granaten.Text = "Granaten: " + sp1.granaten;
             granaten.Update();
+
 
             lebenl.Text = "Leben: " + sp1.leben;
             lebenl.Update();

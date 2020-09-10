@@ -78,3 +78,4 @@ C:\Users\mondsv1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shoote
 C:\Users\mondsv1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.csproj.CoreCompileInputs.cache
 C:\Users\mondsv1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.exe
 C:\Users\mondsv1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.pdb
+C:\Users\appeph1\Documents\GitHub\Shooter2.1\Shooter2.1\Shooter\obj\Debug\Shooter.Form2.resources
