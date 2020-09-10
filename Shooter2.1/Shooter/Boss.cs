@@ -16,7 +16,7 @@ namespace Shooter
 
         public Boss(int tot1)
         {
-            this.tot = tot1;
+            this.tot = tot1+1;
             tothalb = tot / 2;
             totviertel = tothalb / 2;
         }
